@@ -1,6 +1,7 @@
 # TMP-SSurface-2.0
 
 A Deep Learning-Based Predictor for Surface Accessibility of Transmembrane Protein Residues.
+<p align="center"><img width="100%" src="image/CNN-LSTM.png" /></p>
 <p align="center"><img width="100%" src="image/TMP-SSurface-2.0.png" /></p>
 
 ## Download data
@@ -16,7 +17,6 @@ We provide the test dataset used in this study,  you can download test.fasta to 
 
 ### Testing & Evaluation in Command Line
 We provide run.py that is able to run pre-trained models. Run it with:
-
 ```
 python run.py -f sample/sample.fasta -p sample/pssm/ -o results/
 ```
