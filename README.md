@@ -15,14 +15,15 @@ We provide the test dataset used in this study,  you can download test.fasta to 
 - Blast tools for generating PSSM file
 
 ### Testing & Evaluation in Command Line
-We provide run.py that is able to run pre-trained models. 
-* To set the path of fasta file, use `--fasta` or `-f`.
-* To set the path of generated pssm files, use `--pssm_path` or `-p`.
-* To save outputs to a directory, use `--output` or `-o`.
-Run it with:
+We provide run.py that is able to run pre-trained models. Run it with:
+
 ```
 python run.py -f sample/sample.fasta -p sample/pssm/ -o results/
 ```
+
+* To set the path of fasta file, use `--fasta` or `-f`.
+* To set the path of generated pssm files, use `--pssm_path` or `-p`.
+* To save outputs to a directory, use `--output` or `-o`.
 
 ## Progress
 - [x] README for running TMP-SSurface-2.0.
