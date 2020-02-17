@@ -68,7 +68,7 @@ if __name__ == "__main__":
     x_zpred = processor.zpred_pre_processing(fasta, pssm_path, 25) 
     x_zpred = x_zpred.reshape(x_zpred.shape[0], 25, 41, 1)
     
-    cnn_model_path = 'model/CNN_model.h5'
+    cnn_model_path = 'models/CNN_model.h5'
     cnn_model = load_model(cnn_model_path, custom_objects={'cc':cc, 'lr':lr_metric})
     cnn_model.summary()
     
@@ -98,7 +98,7 @@ if __name__ == "__main__":
     model.summary()
 
     # load weights
-    model.load_weights('model/LSTM_weights.h5')
+    model.load_weights('models/LSTM_weights.h5')
     y_pred = model.predict(x_test, batch_size=128)
     
     print('finished!')
