@@ -1,7 +1,7 @@
 # TMP-SSurface-2.0
 
 A Deep Learning-Based Predictor for Surface Accessibility of Transmembrane Protein Residues.
-<p align="center"><img width="100%" src="image/CNN-LSTM.png" /></p>
+<p align="center"><img width="50%" src="image/CNN-LSTM.png" /></p>
 <p align="center"><img width="100%" src="image/TMP-SSurface-2.0.png" /></p>
 
 ## Download data
