@@ -45,15 +45,21 @@ def get_lr_metric(optimizer):
 
 if __name__ == "__main__":
 
+    '''
+    cmd = python run.py --fasta sample/sample.fasta --pssm_path sample/pssm/ --output_path results/
+    cmd = python run.py -f sample/sample.fasta -p sample/pssm/ -o results/
+    '''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--fasta', default='sample/sample.fasta')
-    parser.add_argument('--pssm_path', default='sample/pssm/')
+    parser.add_argument('-f', '--fasta', default='sample/sample.fasta')
+    parser.add_argument('-p', '--pssm_path', default='sample/pssm/')
+    parser.add_argument('-o', '--output_path', default='results/')
     args = parser.parse_args()
     #print(args)    
     
     processor = Processor()
     fasta = args.fasta
-    pssm_path = args.pssm_path    
+    pssm_path = args.pssm_path   
+    output_path = args.output_path
     
     # get zpred feature
     adadelta = Adadelta(lr=1.0, rho=0.95, epsilon=None, decay=0.0)
@@ -111,7 +117,7 @@ if __name__ == "__main__":
             if(i != '\n'):
                 rASA_line = y_pred[index][0]
                 index += 1
-                w = open("results/" + pdb_id + ".rASA","a+")
+                w = open(output_path + pdb_id + ".rASA","a+")
                 w.write(str(rASA_line) + '\n')
         temp = get_fasta.readline()    
 

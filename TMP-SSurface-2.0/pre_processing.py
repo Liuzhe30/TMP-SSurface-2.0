@@ -88,8 +88,8 @@ class Processor:
             #-------- add pssm feature ----------# 
             length = code.shape[0]
             list_dir = os.getcwd()
-            pssm_path = pssm_path + pdb_id + ".pssm"
-            pssm_file = os.path.join(list_dir, pssm_path)
+            pssm_path2 = pssm_path + pdb_id + ".pssm"
+            pssm_file = os.path.join(list_dir, pssm_path2)
             if(os.path.exists(pssm_file)):
                 pssm = open(pssm_file)
                 pssm_matrix = np.zeros([length, 20], int)
@@ -199,8 +199,8 @@ class Processor:
             #-------- add pssm feature ----------# 
             length = code.shape[0]
             list_dir = os.getcwd()
-            pssm_path = pssm_path + pdb_id + ".pssm"
-            pssm_file = os.path.join(list_dir, pssm_path)
+            pssm_path2 = pssm_path + pdb_id + ".pssm"
+            pssm_file = os.path.join(list_dir, pssm_path2)
             if(os.path.exists(pssm_file)):
                 pssm = open(pssm_file)
                 pssm_matrix = np.zeros([length, 20], int)
