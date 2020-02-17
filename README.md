@@ -12,7 +12,7 @@ We provide the test dataset used in this study,  you can download test.fasta to 
 ### Requirements
 - Python ≥ 3.6
 - Tensorflow and Keras
-- Blast tools for generating PSSM file
+- Psi-Blast for generating PSSM files
 
 ### Testing & Evaluation in Command Line
 We provide run.py that is able to run pre-trained models. Run it with:
@@ -22,7 +22,7 @@ python run.py -f sample/sample.fasta -p sample/pssm/ -o results/
 ```
 
 * To set the path of fasta file, use `--fasta` or `-f`.
-* To set the path of generated pssm files, use `--pssm_path` or `-p`.
+* To set the path of generated PSSM files, use `--pssm_path` or `-p`.
 * To save outputs to a directory, use `--output` or `-o`.
 
 ## Progress
