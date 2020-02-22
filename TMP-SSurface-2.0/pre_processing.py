@@ -45,7 +45,10 @@ class Processor:
             #-------- one-hot encoded (len * 20) ----------#
             for i in line:
                 if(i != "\n"):
-                    code = dict[i.upper()]
+                    try:
+                        code = dict[i.upper()]
+                    except KeyError:
+                        print('The sequence of ' + pdb_id + ' contains an invalid character.')
                     codelist.append(code)
             data = np.array(codelist)
             #print('Shape of data (BEFORE encode): %s' % str(data.shape))
