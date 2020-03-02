@@ -117,7 +117,7 @@ if __name__ == "__main__":
             if(i != '\n'):
                 rASA_line = y_pred[index][0]
                 index += 1
-                w = open(output_path + pdb_id + ".rASA","a+")
+                w = open(output_path + pdb_id + ".rASA","w+")
                 w.write(str(rASA_line) + '\n')
         temp = get_fasta.readline()    
 

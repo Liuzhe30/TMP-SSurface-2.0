@@ -159,7 +159,7 @@ class Processor:
                 if(i != '\n'):
                     zpred_line = pred_zpred[index][0]
                     index += 1
-                    w = open("temp/" + pdb_id + ".zpred","a+")
+                    w = open("temp/" + pdb_id + ".zpred","w+")
                     w.write(str(zpred_line) + '\n')
             temp = get_fasta.readline()
         
