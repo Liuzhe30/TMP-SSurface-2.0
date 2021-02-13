@@ -12,7 +12,7 @@ We provide the test dataset used in this study,  you can download test.fasta to 
 
 ### Requirements
 - Python ≥ 3.6
-- Tensorflow and Keras
+- Tensorflow = 1.14 and Keras = 2.1
 - Psi-Blast for generating PSSM files
 
 ### Testing & Evaluation in Command Line
