@@ -119,6 +119,7 @@ if __name__ == "__main__":
                 index += 1
                 w = open(output_path + pdb_id + ".rASA","a+")
                 w.write(str(rASA_line) + '\n')
+        w.close()
         temp = get_fasta.readline()    
 
     
