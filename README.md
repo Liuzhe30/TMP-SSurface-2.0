@@ -27,3 +27,9 @@ python run.py -f sample/sample.fasta -p sample/pssm/ -o results/
 
 ## Progress
 - [x] README for running TMP-SSurface-2.0.
+
+## Citation
+Please cite the following paper for using this code: 
+```
+Liu Z, Gong Y, Guo Y, Zhang X, Lu C, Zhang L, Wang H. TMP- SSurface2: A Novel Deep Learning-Based Surface Accessibility Predictor for Transmembrane Protein Sequence. Front Genet. 2021 Mar 15;12:656140. doi: 10.3389/fgene.2021.656140. PMID: 33790952; PMCID: PMC8006303.
+```
